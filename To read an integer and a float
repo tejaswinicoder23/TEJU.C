@@ -1,0 +1,14 @@
+// Write a c code that reads an integer and a float value and displays them
+#include <stdio.h>
+
+int main() {
+    int a;
+    float f;
+    printf("enter an integer\n");
+    scanf("%d",&a);
+    printf("enter float\n");
+    scanf("%f",&f);
+    printf("integer=%d\n",a);
+    printf("float=%f\n",f);
+    return 0;
+}
