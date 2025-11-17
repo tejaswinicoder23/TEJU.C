@@ -30,3 +30,15 @@ int main() {
 
     return 0;
 }
+#include <stdio.h>
+
+int main() {
+    int a=5;
+    float b;
+    b=(float)a;//int to float 
+    printf("%d\n",a);
+    printf("%f\n",b);
+    
+
+    return 0;
+}
