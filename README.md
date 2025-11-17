@@ -44,3 +44,15 @@ int main() {
 
     return 0;
 }
+// Write a c code to print your name , age and location 
+#include <stdio.h>
+
+int main() {
+    char name;
+     int age;
+     char loc;
+     printf("your name=Teju\n",name);
+     printf("your age=18\n",age);
+     printf("your location =clk\n",loc);
+     return 0;
+}
