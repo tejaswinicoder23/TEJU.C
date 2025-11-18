@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int teju()
+{
+    printf("mubeen\n");
+    printf("sushma\n");
+    printf("dumbers\n");
+}
+int main(){
+    teju();
+}
