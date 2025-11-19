@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+
+   int large(int a,int b, int c){
+  if(a>=b && a>=c){
+      printf("A is largest\n");
+  }
+ else if(b>=a && b>=c){
+        printf("b is largest\n");
+    }
+    else{ printf("c is largest\n");
+    }
+   }
+   int main()
+   {
+       large(8, 1,2);
+   }
+   
