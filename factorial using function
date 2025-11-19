@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int factorial(){
+    
+    int n,fact=1;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++){
+        fact=fact*i;
+    }
+    printf("%d\n",fact);
+}
+int main()
+{
+    factorial();
+}
