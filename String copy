@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+char ar[20];
+ strcpy(ar,"tejaswini");
+printf("%s",ar);
+}
