@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main() {
+int *teju=(int*)malloc(sizeof(int));
+*teju=100;
+printf("value of %d\n",*teju);
+free(teju);
+printf("after free value=%d\n",*teju);
+}
