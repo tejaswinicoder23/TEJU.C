@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    struct tejuachar{
+        char name[10];
+        int rollno;
+        float marks;
+    };
+    struct tejuachar tej;
+    { 
+        printf("Enter the name:\n");
+        scanf("%s",&tej.name);
+        printf("Enter the roll number:\n");
+        scanf("%d",&tej.rollno);
+         printf("Enter the marks:\n");
+        scanf("%f",&tej.marks);
+        printf("%s %d %f",tej.name,tej.rollno,tej.marks);
+    }
+}
+        
+        
