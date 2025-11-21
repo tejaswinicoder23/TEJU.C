@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include<string.h>
+#define MAX100 
+int main()
+{
+ char descripition[MAX];
+char keyword[100];
+int len;
+printf("enter the couse description\n");
+scanf("%s",descripition);
+len=strlen(descripition);
+if(strstr(descripition,keyword))
+printf("Keyword'%s' found in the %s course descripition");
+else
+printf("Keyword'%s'not found in the %s course descripition");
+}
