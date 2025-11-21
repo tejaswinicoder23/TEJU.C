@@ -1,0 +1,17 @@
+#include<stdlib.h>
+int main() {
+
+   int *teju =(int*)malloc(5*sizeof(int));
+   for(int i=0;i<5; i++){
+       printf("enter the elements%d",i+1);
+       scanf("%d",&teju[i]);
+   }
+     printf("array elements\n");
+     for(int i=0;i<5; i++){
+         printf("%d\n",teju[i]);
+     }
+       free(teju);
+       for(int i=0;i<5; i++){
+         printf("%d\n",teju[i]);
+   }
+}
