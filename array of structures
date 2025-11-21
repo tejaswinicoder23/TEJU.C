@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    struct tejuachar {
+        char name[10];
+        int rollno;
+        float marks;
+    };
+    struct tejuachar tej[3];
+    for (int i = 0; i < 3; i++) {
+        printf("Enter the name, rollno, marks:\n");
+        scanf("%s %d %f", tej[i].name, &tej[i].rollno, &tej[i].marks);
+    }
+    for (int i = 0; i < 3; i++) {
+        printf("Name: %s, Roll No: %d, Marks: %.2f\n",
+               tej[i].name, tej[i].rollno, tej[i].marks);
+    }
+    
+}
