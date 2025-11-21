@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main() {
+int *teju=(int*)malloc(10*sizeof(int));
+*teju=100;
+printf("value of %d",*teju);
+printf("address of %f",*teju);
+}
