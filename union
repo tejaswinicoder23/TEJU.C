@@ -1,0 +1,13 @@
+#include <stdio.h>
+union teju{
+    int i;
+    float f;
+};
+   int main()
+   {
+       union teju t;
+       t.i=100;
+       printf("%d\n",t.i);
+       t.f=7.008;
+       printf("%f",t.f);
+   }
