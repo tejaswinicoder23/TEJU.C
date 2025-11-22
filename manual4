@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float a,b,c,root1,root2,real,imaginary,disc;
+    printf("Enter the coefficients of a quadratic equation\n");
+    scanf("%f%f%f",&a,&b,&c);
+    if(a==0 && b==0){
+        printf("invalid cofficients\n");
+    }
+    else if(a==0){
+        root1=-c/b;
+        printf("Linear equation with root %f\n",root1);
+    }
+    else {
+        disc=b*b-4*a*c;
+        printf("Discriminant=%f",disc);
+        if(disc>0)
+        {
+            root1=(-b+sqrt(disc))/(2*a);
+            root2=(-b-sqrt(disc))/(2*a);
+            printf("Two discriminant real roots %f anf %f\n",root1,root2);
+        }
+        else if(disc==0){
+            root1=-b/(2*a);
+            printf("One real root=%f\n",root1);
+        }
+        else{
+            real=-b/(2*a);
+            imaginary=sqrt(-disc)/(2*a);
+            printf("complex roots %f+%f and %f-%f\n",real,imaginary);
+        }
+        }
+        }
+    
+   
