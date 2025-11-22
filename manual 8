@@ -1,0 +1,24 @@
+#include<stdio.h>
+int swap(int *a , int *b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+}
+int main(){\
+int bal1,bal2;
+
+printf("Enter the bALANCE FOR ACCOUNT 1\n");
+scanf("%d",&bal1);
+
+printf("ENTER THE bALANCE FOR ACCOUNT 2\n");
+scanf("%d",&bal2);
+
+printf("before swapping\n");
+printf("account 1 balance:%d\n",bal1);
+printf("account 2 balance:%d\n",bal2);
+swap(&bal1,&bal2);
+
+printf("After swapping:\n");
+printf("account 1 balance:%d\n",bal1);
+printf("account 2 balance:%d\n",bal2);
+}
