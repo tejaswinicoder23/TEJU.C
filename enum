@@ -1,0 +1,13 @@
+#include<stdio.h>
+enum tejaswinij{
+    teju,
+    sushma ,
+    mubeen ,
+    trio,
+    
+};
+int main(){
+    enum tejaswinij t
+    t=teju;
+    printf("%d",t);
+}
