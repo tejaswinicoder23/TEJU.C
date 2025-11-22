@@ -1,0 +1,24 @@
+#include <stdio.h>
+int callbyvalue(int a,int b){
+    int temp=a;
+    a=b;
+    b=temp;
+    printf("preview swap(by value):%d %d\n",a,b);
+}
+int callbyreference(int *a,int *b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+    printf("actual swap(by refercence):%d %d\n",*a,*b);
+}
+int main()
+{
+    int x,y;
+    printf("Enter the currenices:\n");
+    scanf("%d%d",&x,&y);
+    callbyvalue(x,y);
+    printf("After call by value:%d %d\n",x,y);
+    callbyreference(&x,&y);
+     printf("After call by reference:%d %d\n",x,y);
+}
+    
